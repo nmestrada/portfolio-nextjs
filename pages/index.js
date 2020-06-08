@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import axios from 'axios'
 import {useState, useEffect} from 'react'
+import SingleProject from './components/singleProject'
 
 export default function Home() {
   const [projects, setProjects] = useState([])
@@ -19,11 +20,12 @@ export default function Home() {
 
       <main>
         <div className="hero">
-            Natalie Estrada
+            <h1>Natalie</h1>
+            <h2>Web Developer Projects</h2>
         </div>
         <div className="projects">
             {
-                projects.map(project => <div key={project.title}>{project.title}</div>)
+                projects.map(project => <SingleProject project={project}/>)
             }
         </div>
       </main>
