@@ -12,18 +12,21 @@ export default function Home() {
     })
     .catch(err => console.log(err.message))
   },[])
+  const handleScroll = (event) => {
+      console.log(event.target)
+  }
   return (
     <div className="container">
       <Head>
         <title>Natalie Estrada Full Stack Developer</title>
       </Head>
 
-      <main>
+      <main onScroll={handleScroll}>
         <div className="hero">
             <h1>Natalie</h1>
             <h2>Web Developer Projects</h2>
         </div>
-        <div className="projects">
+        <div className="projects" >
             {
                 projects.map(project => <SingleProject project={project}/>)
             }

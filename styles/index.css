@@ -138,6 +138,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width:100%;
   }
 .hero {
     display:flex;
@@ -153,6 +154,9 @@ main {
     flex-direction: column;
     color: #fff;
 }  
+.projects{
+    width:100%;
+}
 .project{
     display: flex;
     flex-direction: row;
