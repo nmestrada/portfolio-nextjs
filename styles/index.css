@@ -131,6 +131,19 @@ code {
 /* 
 index.js styles
  */
+nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 main {
     padding: 5rem 0;
     flex: 1;
@@ -164,6 +177,10 @@ main {
 }
 .project:nth-child(odd) {
     flex-direction: row-reverse;
+}
+
+.is-current {
+    color: palevioletred;
 }
 /* component styles */
 .images-container {
