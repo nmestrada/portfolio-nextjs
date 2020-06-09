@@ -131,13 +131,20 @@ code {
 /* 
 index.js styles
  */
-nav {
+.nav {
     overflow: hidden;
-    background-color: #333;
+    color: white;
+    font-weight: bold;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
+    transition: background-color 1s ease 0s;
+}
+.solid {
+    color:white;
+    background-color: black;
+    transition: background-color 1s ease 0s;
 }
 .sticky {
     position: fixed;
@@ -145,7 +152,6 @@ nav {
     width: 100%;
   }
 main {
-    padding: 5rem 0;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -178,8 +184,8 @@ main {
 .project:nth-child(odd) {
     flex-direction: row-reverse;
 }
-
-.is-current {
+/* is-active class from react scroll  */
+.is-active {
     color: palevioletred;
 }
 /* component styles */
