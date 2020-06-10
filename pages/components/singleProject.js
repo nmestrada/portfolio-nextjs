@@ -4,7 +4,7 @@ export default function SingleProject({project}) {
     const techStack = project.techStack;
     return (
         <div className="project" key={project.title}>
-            <div>
+            <div className="project-content">
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
                 <ul className="techStack">

@@ -185,21 +185,26 @@ main {
 .projects{
     padding: 0 0.5rem;
     width:100%;
-}
-.project{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
-.project:nth-child(odd) {
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 section {
     margin-bottom: 1rem;
 }
 
 /* component styles */
+.project{
+    flex:1 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.project:nth-child(odd) {
+    flex-direction: row-reverse;
+}
 .images-container {
     display:flex;
     justify-content: center;
@@ -210,6 +215,9 @@ section {
     max-height: 350px;
     overflow: scroll;
     border-radius: 10px;
+}
+.project-content {
+    margin-left: 2rem;
 }
 /* list tags */
 .techStack ul {
