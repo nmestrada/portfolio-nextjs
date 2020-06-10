@@ -14,6 +14,7 @@ export default function Home() {
     })
     .catch(err => console.log(err.message))
     window.addEventListener('scroll', function() {
+        // add throttle instead this calllback
         let heroHeight = document.querySelector('.hero').clientHeight;
         console.log('hero height',heroHeight)
         if(window.scrollY > heroHeight){
@@ -30,6 +31,7 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Natalie Estrada Full Stack Developer</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
     <nav className={navClass}>
       <Scrollspy items={ ['projects', 'about'] } currentClassName="is-active">
@@ -39,7 +41,7 @@ export default function Home() {
     </nav>
       <main>
         <section className="hero">
-            <h1>Natalie</h1>
+            <h1>Natalie Estrada</h1>
             <h2>Web Developer Projects</h2>
         </section>
         <section className="projects" id="projects">
