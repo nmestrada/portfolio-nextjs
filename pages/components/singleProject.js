@@ -3,7 +3,7 @@ export default function SingleProject({project}) {
     const images = project.images;
     const techStack = project.techStack;
     return (
-        <div className="project" key={project.title}>
+        <div className="project card" key={project.title}>
             <div className="project-content">
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
