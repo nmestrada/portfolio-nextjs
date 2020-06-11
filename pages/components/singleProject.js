@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import {RiYoutubeLine} from 'react-icons/ri'
 
 export default function SingleProject({project}) {
-    const images = project.images || [];
+    const image = project.image || '';
     const techStack = project.techStack || [];
     return (
         <div 
@@ -42,7 +42,7 @@ export default function SingleProject({project}) {
                 </div>
             </div>
             <div className='images-container'>
-                {images.length && <img src={images[0]} alt='project-image' className='image'/>}
+                 <img src={image} alt='project-image' className='image'/>
                 {/* {images.map(image => <img key={image} src={image} alt='project-image' className='image'/>)}  */}
             </div>
         </div>
