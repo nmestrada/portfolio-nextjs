@@ -51,6 +51,10 @@ export default function Home() {
             }
         </section>
         <About/>
+        <section className="blog">
+            <h2>Blog</h2>
+            <p>Currently in Progress!</p>
+        </section>
       </main>
 
       <footer>

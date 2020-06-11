@@ -299,6 +299,12 @@ About Styles
     font-size: 3rem;
     color: rgb(34, 109, 109);
 }
+/* Blog section */
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* 
 media queries 
 */
