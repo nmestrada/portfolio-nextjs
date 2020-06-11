@@ -207,6 +207,12 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     margin: 1rem;
+    height: 40px;
+    overflow: hidden;
+    transition: height 0.4s;
+}
+.project:hover .project-content{
+    height:100%;
 }
 .project-content > h4{
     margin:0;
@@ -262,7 +268,20 @@ section {
 	background-color: #fff;
 	border-radius: 100%;
 }
-
+/* 
+About Styles 
+*/
+.about {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40rem;
+}
+.about img {
+    width: 20%;
+    border-radius: 10px;
+}
 /* 
 media queries 
 */

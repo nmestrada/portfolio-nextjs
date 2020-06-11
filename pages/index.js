@@ -2,6 +2,7 @@ import Head from 'next/head'
 import axios from 'axios'
 import {useState, useEffect} from 'react'
 import SingleProject from './components/singleProject'
+import About from './components/About'
 import Scrollspy from 'react-scrollspy'
 
 export default function Home() {
@@ -49,12 +50,7 @@ export default function Home() {
                 projects.map(project => <SingleProject project={project}/>)
             }
         </section>
-        <section className="about" id="about">
-            <h2>About Me</h2>
-        </section>
-        <section>
-            <h3>Contact</h3>
-        </section>
+        <About/>
       </main>
 
       <footer>

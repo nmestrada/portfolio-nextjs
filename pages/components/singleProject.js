@@ -1,3 +1,4 @@
+import { FaGithub } from "react-icons/fa";
 
 export default function SingleProject({project}) {
     const images = project.images;
@@ -18,7 +19,7 @@ export default function SingleProject({project}) {
                 
             
                 <div className="project-links">
-                    <span>Github</span>
+                    <span><FaGithub/></span>
                 </div>
             </div>
             <div className='images-container'>
