@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import axios from 'axios'
 import {useState, useEffect} from 'react'
-import SingleProject from './components/singleProject'
-import About from './components/About'
+import SingleProject from '../components/SingleProject'
+import About from '../components/About'
 import Scrollspy from 'react-scrollspy'
 
 export default function Home() {
