@@ -2,8 +2,8 @@ import { FaGithub } from "react-icons/fa";
 import {RiYoutubeLine} from 'react-icons/ri'
 
 export default function SingleProject({project}) {
-    const images = project.images;
-    const techStack = project.techStack;
+    const images = project.images || [];
+    const techStack = project.techStack || [];
     return (
         <div 
             className="project card" 
