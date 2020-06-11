@@ -32,7 +32,7 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Natalie Estrada Full Stack Developer</title>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
     <nav className={navClass}>
       <Scrollspy items={ ['projects', 'about'] } currentClassName="is-active">

@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Monrserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -165,11 +165,10 @@ section {
     flex-direction: column-reverse;
     justify-content: space-between;
     margin: 1rem;
-    padding: 1rem;
-    min-height: 24rem;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     position: relative;
+    overflow: hidden;
 }
 .card:hover,
 .card:focus,
@@ -192,13 +191,13 @@ section {
     display:flex;
     justify-content: center;
     align-items: center;
+    height: 20rem;
     border-radius: 10px 10px 0 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
 
 }
 .image {
-    width: 100%;
-    max-height: 12rem;;
+    height:100%;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
     z-index: -1;
@@ -207,21 +206,31 @@ section {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 1rem;
-    height: 40px;
-    overflow: hidden;
-    transition: height 0.4s;
+    padding: 1rem;
+    height: 30%;
+    transition: height 0.4s, opacity 0.4s;
     position: absolute;
+    overflow: hidden;
+    background-color: #000;
+    opacity: 0.8;
+    color: #fff;
 }
 .project:hover .project-content{
+    opacity: 1;
     height:100%;
-    background: white;
 }
 .project-content > h4{
     margin:0;
 }
 .project-content > h2{
     margin:0;
+}
+.project-button {
+    background: transparent;
+    width: 20%;
+    font-size: 2rem;
+    border: none;
+    color: #fff;
 }
 /* list tags */
 .techStack ul {
@@ -289,12 +298,11 @@ About Styles
 media queries 
 */
 
-@media (max-width: 600px) {
+@media (max-width: 645px) {
     .project{
-      width: 100%;
+      flex-basis: 75%;
     }
     .projects{
-      flex-direction: column;
       margin: 3rem;
     }
   }

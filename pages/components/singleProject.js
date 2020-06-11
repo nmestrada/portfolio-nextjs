@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa";
+import {RiArrowUpSLine} from 'react-icons/ri'
 
 export default function SingleProject({project}) {
     const images = project.images;
@@ -8,7 +9,9 @@ export default function SingleProject({project}) {
             className="project card" 
             key={project.title}
         >
+            
             <div className="project-content">
+            {/* <button className='project-button' type='button'><RiArrowUpSLine/></button> */}
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
                 <p>Built With:
