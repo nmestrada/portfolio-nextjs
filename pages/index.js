@@ -58,7 +58,7 @@ export default function Home() {
       </main>
 
       <footer>
-        <p>	&copy;Natalie Estrada 2020</p>
+        <p>	&copy; {new Date().getFullYear()} Natalie Estrada</p>
       </footer>
     </div>
   )

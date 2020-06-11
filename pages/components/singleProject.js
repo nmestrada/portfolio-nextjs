@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa";
-import {RiArrowUpSLine} from 'react-icons/ri'
+import {RiYoutubeLine} from 'react-icons/ri'
 
 export default function SingleProject({project}) {
     const images = project.images;
@@ -13,16 +13,32 @@ export default function SingleProject({project}) {
             <div className="project-content">
             {/* <button className='project-button' type='button'><RiArrowUpSLine/></button> */}
                 <h2>{project.title}</h2>
+                <p>{project.role}</p>
                 <p>{project.description}</p>
                 <p>Built With:
                     <ul className="techStack">
                         {techStack.map(item => <li key={item}>{item}</li>)}
                     </ul>
                 </p>
-                
-            
                 <div className="project-links">
-                    <span><FaGithub/></span>
+                    <a href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FaGithub/>
+                    </a>
+                    {project.youtube && <a href={project.youtube}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <RiYoutubeLine/>
+                    </a>}
+                    {project.deployLink && <a href={project.deployLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Live Site!
+                    </a>}
                 </div>
             </div>
             <div className='images-container'>
