@@ -54,7 +54,7 @@ export default function Home() {
       </main>
 
       <footer>
-        <p>Other Links</p>
+        <p>	&copy;Natalie Estrada 2020</p>
       </footer>
     </div>
   )

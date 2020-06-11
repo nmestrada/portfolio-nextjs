@@ -289,10 +289,15 @@ About Styles
     flex-direction: column;
     align-items: center;
     max-width: 40rem;
+    margin: auto 3rem;
 }
 .about img {
-    width: 20%;
+    width: 25%;
     border-radius: 10px;
+}
+.social-links {
+    font-size: 3rem;
+    color: rgb(34, 109, 109);
 }
 /* 
 media queries 
@@ -304,5 +309,8 @@ media queries
     }
     .projects{
       margin: 3rem;
+    }
+    .about img {
+        width:40%;
     }
   }

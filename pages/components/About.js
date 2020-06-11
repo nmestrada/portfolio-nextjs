@@ -10,14 +10,11 @@ export default function About() {
             <p>Currently Learning: Vue.js, Python & Deep Learning with PyTorch</p>
             <h3>Not Just A Coder</h3>
             <p>When I'm not coding you can find me: Taking care of my many plants, painting with watercolors, dancing and teaching Argentine Tango or learning how to use LMMS an open source music producing software.</p>
-            <h3>Contact</h3>
+            <h3>Let's Connect!</h3>
             <div className='social-links'>
-                <p>Let's Connect! Follow Me:</p>
-                <div>
                 <FaLinkedin/>
                 <FaTwitter/>
                 <FaGithub/>
-                </div>
             </div>
         </section>
     )
