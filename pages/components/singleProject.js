@@ -42,7 +42,7 @@ export default function SingleProject({project}) {
                 </div>
             </div>
             <div className='images-container'>
-                 <img src={image} alt='project-image' className='image'/>
+                 {image && <img src={image} alt='project-image' className='image'/>}
                 {/* {images.map(image => <img key={image} src={image} alt='project-image' className='image'/>)}  */}
             </div>
         </div>
