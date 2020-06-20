@@ -1,9 +1,9 @@
 import {FaLinkedin, FaTwitter, FaGithub} from 'react-icons/fa'
 export default function About() {
     return (
-        <section className="about" id="about">
+        <div className="about" id="about">
+            <h1>About Me</h1>
             <img src='/images/headshoticon1.jpg' alt='NatalieEstradaImage'/>
-            <h2>About Me</h2>
             <p>I've always been passionate about teaching myself web development. I started by building a blog during my free time working in customer service.
             I have a background studying Materials Science Engineering at University of Michigan and I've always loved problem solving, building projects and creating solutions that make people's lives easier. </p>
             <h3>Learning & Growing</h3>
@@ -33,6 +33,6 @@ export default function About() {
                 </a>
                 
             </div>
-        </section>
+        </div>
     )
 }

@@ -39,12 +39,14 @@ export default function Home() {
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
       </Scrollspy>
+      
     </nav>
       <main>
-        <section className="hero">
+      <div className="hero">
             <h1>Natalie Estrada</h1>
-            <h2>Web Developer Projects</h2>
-        </section>
+            <h2>Software Developer</h2>
+        </div>
+        <h1>Projects</h1>
         <section className="projects" id="projects">
             {
                 projects.map(project => <SingleProject project={project}/>)
