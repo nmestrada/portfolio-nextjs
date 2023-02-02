@@ -3,6 +3,7 @@
 //import { useState, useEffect } from 'react';
 //import SingleProject from '../components/SingleProject';
 import AboutV2 from '../components/AboutV2';
+import { Blog } from '../components/Blog';
 //import Scrollspy from 'react-scrollspy';
 
 export default function Home() {
@@ -30,32 +31,10 @@ export default function Home() {
 
   return (
     <div className="container">
-      {/* <Head>
-        <title>Natalie Estrada Full Stack Developer</title>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"></link>
-      </Head>
-    <nav className={navClass}>
-      <Scrollspy items={ ['projects', 'about'] } currentClassName="is-active">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-      </Scrollspy>
-      
-    </nav> */}
       <main>
-        {/* <div className="hero">
-          <h1>Natalie Estrada</h1>
-          <h2>Software Developer</h2>
-        </div>
-        <h1>Projects</h1>
-        <section className="projects" id="projects">
-          {projects.map((project) => (
-            <SingleProject project={project} />
-          ))}
-        </section> */}
         <AboutV2 />
         <section className="blog">
-          <h2>Blog</h2>
-          <p>Currently in Progress!</p>
+          <Blog />
         </section>
       </main>
 
