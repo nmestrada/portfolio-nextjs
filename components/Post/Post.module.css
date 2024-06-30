@@ -1,4 +1,10 @@
 .post {
-    width: 100%;
-    padding: 0.5rem 2rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: bisque;
+  border-radius: 10px;
+  border: 2px solid darkslateblue;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  white-space: pre-line;
+  margin-bottom: 48px;
 }

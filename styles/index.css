@@ -6,11 +6,9 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
 
- /* background: radial-gradient(circle, rgba(238,174,202,1) 0%,#912F56) */
- background-color: #E2B4C8;
- background-image: -webkit-linear-gradient(56deg, #F7A9A8 50%, #EFAAC4 50%);
-
-
+  /* background: radial-gradient(circle, rgba(238,174,202,1) 0%,#912F56) */
+  background-color: #e2b4c8;
+  background-image: -webkit-linear-gradient(56deg, #f7a9a8 50%, #efaac4 50%);
 }
 
 * {
@@ -147,7 +145,6 @@ nav styles
 main styles
  */
 main {
-    padding: 5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -180,6 +177,7 @@ main {
 
 section {
   margin-bottom: 1rem;
+  padding: 2rem 8rem;
 }
 
 /* component styles */
@@ -315,7 +313,7 @@ section {
 About Styles 
 */
 .about {
-  padding:2rem 4rem;
+  padding: 2rem 4rem;
   display: flex;
   /* margin: 0 3rem; */
   border-radius: 10px;
@@ -323,7 +321,7 @@ About Styles
   /* width:80%; */
   align-items: center;
   justify-content: center;
-  color: #161B33;
+  color: #161b33;
 }
 .about img {
   height: 10rem;
@@ -332,8 +330,8 @@ About Styles
 }
 
 .flex-col {
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .social-links {
   font-size: 3rem;
@@ -346,39 +344,43 @@ About Styles
 
 /* lineup class and keyframes */
 .lineUp {
-    animation: 3s anim-lineUp ease-out 1;
+  animation: 3s anim-lineUp ease-out 1;
 }
 @keyframes anim-lineUp {
-0% {
+  0% {
     opacity: 0;
     transform: translateY(80%);
-}
-20% {
+  }
+  20% {
     opacity: 0;
-}
-50% {
+  }
+  50% {
     opacity: 1;
     transform: translateY(0%);
-}
-100% {
+  }
+  100% {
     opacity: 1;
     transform: translateY(0%);
-}
+  }
 }
 /* Blog section */
 .blog {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 100%;
   border-radius: 15px;
-  padding: 2rem;
+  max-width: 1240px;
 }
 .hero h1 {
   font-size: 3rem;
 }
 .hero h2 {
   font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
 }
 /* 
 media queries 
@@ -393,7 +395,38 @@ media queries
   }
   .about img {
     width: 40%;
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 2rem 2rem;
   }
 }
 
+.list {
+  list-style: none;
+}
 
+.post-link {
+  background-color: transparent;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.post-link-date {
+  color: grey;
+  font-style: italic;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.post-link:hover {
+  font-weight: bold;
+}
