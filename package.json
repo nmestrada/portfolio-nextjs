@@ -8,10 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "autoprefixer": "^9.8.8",
     "axios": "^1.6.7",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "^13.5.2",
+    "postcss": "^7.0.39",
     "raw-loader": "^4.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -20,9 +22,7 @@
     "react-scrollspy": "^3.4.2",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "sass": "^1.26.7"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.4"
+    "sass": "^1.26.7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
