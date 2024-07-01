@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import { getSortedPostsData } from '../../../services/fetchPost';
 import Post from '../../../components/Post/Post';
 
@@ -19,7 +18,7 @@ export function getStaticProps({ params }) {
 }
 
 export default function BlogPage({ post }) {
-  if (!post) {
+  if (!post && !post?.content) {
     return null;
   }
   return <Post content={post?.content} title={post?.title} date={post?.date} />;

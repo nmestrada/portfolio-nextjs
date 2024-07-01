@@ -13,7 +13,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <div className="container">
+    <div className="flex flex-col h-full">
       <main>
         <AboutV2 />
         <section className="blog">

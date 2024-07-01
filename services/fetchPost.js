@@ -19,13 +19,11 @@ export function getSortedPostsData() {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
-    console.log({ matterResult });
-
     // Combine the data with the id
     return {
       id,
       ...matterResult.data,
-      content: matterResult.content,
+      content: matterResult?.content,
     };
   });
   // Sort posts by date
