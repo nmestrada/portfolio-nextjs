@@ -19,5 +19,8 @@ export function getStaticProps({ params }) {
 }
 
 export default function BlogPage({ post }) {
+  if (!post) {
+    return null;
+  }
   return <Post content={post?.content} title={post?.title} date={post?.date} />;
 }
