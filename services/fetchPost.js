@@ -44,7 +44,6 @@ export function getPostSlugs() {
 
 export async function getPostBySlug(slug) {
   const realSlug = slug.replace(/\.md$/, '');
-  console.log({ realSlug, postsDirectory });
   const fullPath = path.join(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const data = await markdownToHtml(fileContents);
@@ -66,8 +65,6 @@ export async function getPostBySlug(slug) {
 
 export async function getAllPosts() {
   const slugs = getPostSlugs();
-  console.log({ slugs });
   const posts = await Promise.all(slugs.map((slug) => getPostBySlug(slug)));
-  console.log({ posts });
   return posts;
 }
